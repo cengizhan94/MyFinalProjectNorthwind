@@ -1,4 +1,5 @@
-﻿using Core.Utilities.IOC;
+﻿using Core.CrossCuttingConcerns.Caching;
+using Core.Utilities.IOC;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Core.CrossCuttingConcerns.Microsoft
+namespace Core.CrossCuttingConcerns.Caching.Microsoft
 {
     internal class MemoryCacheManager : ICacheManager
     {
