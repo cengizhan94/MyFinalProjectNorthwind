@@ -53,7 +53,7 @@ namespace WebAPI
             });
             services.AddDependencyResolvers(new ICoreModule[]
             {
-                new CoreModule()
+                new CoreModule() 
             });
         }
 
