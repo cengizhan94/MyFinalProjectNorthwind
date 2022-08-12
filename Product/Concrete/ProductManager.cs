@@ -28,6 +28,7 @@ namespace Business.Concrete
             _productDal = productDal;
             _categoryDal = categoryDal;
         }
+
         [ValidationAspect(typeof(ProductValidator))]
         [SecuredOperation("product.add,admin")]
         [CacheRemoveAspect("IProductService.Get")]
