@@ -13,11 +13,10 @@ namespace Business.Constants
         internal static string UserRegistered = "Register successful.";
         internal static string UserNotFound = "User not found.";
         internal static string PasswordError = "Password is incorrect";
-        internal static string LoginSuccessful = "Login successful";
-       
-        internal static string AuthorizationDenied;
-        internal static string ProductAdded;
-        internal static string ProductDeleted;
-        internal static string ProductNameAllreadyExists;
+        internal static string LoginSuccessful = "Login successful";   
+        internal static string AuthorizationDenied = "Authorization denied";
+        internal static string ProductAdded = "Product added";
+        internal static string ProductDeleted = "Product deleted";
+        internal static string ProductNameAllreadyExists = "Product name allready exists";
     }
 }
