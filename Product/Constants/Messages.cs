@@ -1,6 +1,7 @@
 ﻿using Core.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -11,8 +12,12 @@ namespace Business.Constants
         internal static string UserAllreadyExists;
         internal static string UserRegistered;
         internal static string UserNotFound;
-        internal static User PasswordError;
+        internal static string PasswordError;
         internal static string LoginSuccessful;
         internal static string SuccessfulLogin;
+        internal static string AuthorizationDenied;
+        internal static string ProductAdded;
+        internal static string ProductDeleted;
+        internal static string ProductNameAllreadyExists;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Business.Abstrac;
+using Business.BusinessAspect;
 using Core.Utilities.Results;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstrac;
@@ -40,7 +41,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<Category>(_categoryDal.Get(c => c.CategoryId == categoryId));
         }
-        [SecuredOperation("update")]
+        [SecuredOperation("admin")]
         public IResult Update(Category category)
         {
             _categoryDal.Update(category);
