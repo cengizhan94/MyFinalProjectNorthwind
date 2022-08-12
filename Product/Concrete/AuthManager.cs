@@ -42,7 +42,7 @@ namespace Business.Concrete
 
          public IDataResult<User> Login(UserForLoginDto userForLoginDto)
         {
-            var userToCheck = _userService.(userForLoginDto.Email);
+            var userToCheck = _userService.GetByMail(userForLoginDto.Email);
             if (userToCheck == null)
             {
                 return new ErrorDataResult<User>(Messages.UserNotFound);
@@ -53,7 +53,7 @@ namespace Business.Concrete
                 return new ErrorDataResult<User>(Messages.PasswordError);
             }
 
-            return new SuccessDataResult<User>(userToCheck, Messages.SuccessfulLogin);
+            return new SuccessDataResult<User>(userToCheck, Messages.LoginSuccessful);
         }
 
         public IResult UserExists(string email)

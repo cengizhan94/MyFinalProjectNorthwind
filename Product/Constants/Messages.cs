@@ -8,13 +8,13 @@ namespace Business.Constants
 {
     public static class Messages
     {
-        internal static string AccessTokenCreated;
-        internal static string UserAllreadyExists;
-        internal static string UserRegistered;
-        internal static string UserNotFound;
-        internal static string PasswordError;
-        internal static string LoginSuccessful;
-        internal static string SuccessfulLogin;
+        internal static string AccessTokenCreated = "Access token created.";
+        internal static string UserAllreadyExists = "User allready exists.";
+        internal static string UserRegistered = "Register successful.";
+        internal static string UserNotFound = "User not found.";
+        internal static string PasswordError = "Password is incorrect";
+        internal static string LoginSuccessful = "Login successful";
+       
         internal static string AuthorizationDenied;
         internal static string ProductAdded;
         internal static string ProductDeleted;
