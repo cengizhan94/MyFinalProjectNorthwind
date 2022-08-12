@@ -10,7 +10,7 @@ namespace Business.Abstrac
     {
         IDataResult<List<Category>> GetAll();
         IResult Add(Category category);
-        IResult Delte(Category category);
+        IResult Delete(Category category);
         IResult Update(Category category);
 
         IDataResult<Category> GetById(int categoryId);

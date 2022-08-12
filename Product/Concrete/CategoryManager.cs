@@ -26,7 +26,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
         [SecuredOperation("admin")]
-        public IResult Delte(Category category)
+        public IResult Delete(Category category)
         {
             _categoryDal.Delete(category);
             return new SuccessResult();
