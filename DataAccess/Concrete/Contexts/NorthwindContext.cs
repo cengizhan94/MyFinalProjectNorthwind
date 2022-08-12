@@ -11,8 +11,7 @@ namespace DataAccess.Concrete.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server = (localdb)\mssqllocaldb;Database=Northwind;Truested_Connection=true");
-            
+            optionsBuilder.UseSqlServer(@"server = localhost\SQLEXPRESS01; Database = Northwind; Trusted_Connection = True;");
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
