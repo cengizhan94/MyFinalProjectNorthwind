@@ -1,5 +1,6 @@
 ﻿using Business.Abstrac;
 using Business.BusinessAspect;
+using Core.Aspects.Autofac.Caching;
 using Core.Utilities.Results;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstrac;
@@ -32,6 +33,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        [CacheAspect(duration:5)]
         public IDataResult<List<Category>> GetAll()
         {
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
