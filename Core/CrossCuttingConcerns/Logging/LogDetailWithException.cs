@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Core.CrossCuttingConcerns.Logging
 {
-    public class LogDetailWithExceptions : LogDetail
+    public class LogDetailWithException : LogDetail
     {
         public string ExceptionMessage { get; set; }
     }
