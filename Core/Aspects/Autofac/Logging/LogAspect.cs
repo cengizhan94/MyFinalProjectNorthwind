@@ -29,7 +29,7 @@ namespace Core.Aspects.Autofac.Logging
         }
 
 
-        private LogDetail GetLogDetail(IInvocation invocation)
+        private LogDetail GetLogDetail(IInvocation invocation)        
         {
             var logParameters = new List<LogParameter>();
             for (int i = 0; i < invocation.Arguments.Length; i++)
