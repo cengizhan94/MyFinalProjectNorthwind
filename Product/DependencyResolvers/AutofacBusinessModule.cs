@@ -33,7 +33,7 @@ namespace Business.DependencyResolvers
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
-                .EnableClassInterceptors(new ProxyGenerationOptions()
+                .EnableInterfaceInterceptors(new ProxyGenerationOptions()
                 
             {
                 Selector = new AspectInterceptorSelector()

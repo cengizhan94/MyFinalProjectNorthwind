@@ -14,7 +14,7 @@ namespace Core.Aspects.Autofac.Caching
     {
         private int _duration;
         private ICacheManager _cacheManager;
-       
+
         public CacheAspect(int duration = 60)
         {
             _duration = duration;
@@ -32,11 +32,7 @@ namespace Core.Aspects.Autofac.Caching
                 return;
             }
             invocation.Proceed();
-            _cacheManager.Add(key, invocation.ReturnValue,_duration);
+            _cacheManager.Add(key, invocation.ReturnValue, _duration);
         }
-
-
-
-
     }
 }
